@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>	
+  <title>[Company Name] Tools & Resources</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=670, initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <script src="js/jquery/jquery.min.js"></script>
+  <script src="js/fontawesome/fontawesome-all.min.js"></script>
+  <script src="js/script.js"></script>
+</head>
+<body>
+  <div id="container">
+    <header>
+      <span class="color-gold">[Company </span><span class="color-blue">Name] </span>Tools & Resources
+    </header>
+    <div id="sub-container">
+      <section id="content">
+        <div class="buttons">
+          <div class="button-content border-style button-a">A</div><div class="button-content border-style button-b">B</div><div class="button-content border-style button-c">C</div><div class="button-content border-style button-null">D</div><div class="button-content border-style button-null">E</div><div class="button-content border-style button-f">F</div><div class="button-content border-style button-g">G</div><div class="button-content border-style button-h">H</div><div class="button-content border-style button-i">I</div><div class="button-content border-style button-null">J</div><div class="button-content border-style button-k">K</div><div class="button-content border-style button-l">L</div><div class="button-content border-style button-m">M</div><div class="button-content border-style button-n">N</div><div class="button-content border-style button-null">O</div><div class="button-content border-style button-p">P</div><div class="button-content border-style button-null">Q</div><div class="button-content border-style button-r">R</div><div class="button-content border-style button-s">S</div><div class="button-content border-style button-null">T</div><div class="button-content border-style button-null">U</div><div class="button-content border-style button-null">V</div><div class="button-content border-style button-w">W</div><div class="button-content border-style button-null">XYZ</div>
+        </div>
+        <div class="results">
+           <div class="border-style button-back"><i class="fa fa-chevron-left" aria-hidden="true"></i></div>
+           <div class="results-content"></div>
+        </div>
+      </section>
+      <section id="navigation">
+        <div class="border-style button-menu"><i class="fa fa-bars" aria-hidden="true"></i></div>
+        <div class="border-style quick-note">
+          <textarea id="quick-note-textarea" placeholder="Input notes here..."></textarea>
+          <div class="border-style quick-note-increase"><i class="fa fa-plus" aria-hidden="true"></i></div>
+          <div class="border-style quick-note-reset"><i class="fa fa-refresh" aria-hidden="true"></i></div><div class="border-style quick-note-decrease"><i class="fa fa-minus" aria-hidden="true"></i></div>
+        </div>
+        <div class="border-style button-contacts"><i class="fa fa-phone" aria-hidden="true"></i></div>
+        <nav>
+          <ul>
+            <li class="nav-facilities">Company Locations</li>
+            <li><a href="http://www.google.com" target="_blank">Documentation</a></li>
+            <li><a href="http://www.google.com" target="_blank">Additional Resources</a></li>
+            <li>Themes<br /> <a href="#" onclick="theme1()"><div class="theme-1"></div></a><a href="#" onclick="theme2()"><div class="theme-2"></div></a><a href="#" onclick="theme3()"><div class="theme-3"></div></a><a href="#" onclick="theme4()"><div class="theme-4"></div></a><a href="#" onclick="theme5()"><div class="theme-5"></div></a><a href="#" onclick="theme6()"><div class="theme-6"></div></a><a href="#" onclick="theme7()"><div class="theme-7"></div></a><a href="#" onclick="theme8()"><div class="theme-8"></div></a></li>
+          </ul>
+        </nav>
+      </section>
+    </div>
+    <!-- Facilities Pop-up / Display: None by default -->
+    <section id="facilities">
+      <div id="facilities-container" class="border-style">
+        <div class="facilities-row">
+          <div class="facilities-cell facilities-cell-header">ID</div>
+          <div class="facilities-cell facilities-cell-header">Name</div>
+          <div class="facilities-cell facilities-cell-header">Location</div>
+          <div class="facilities-cell facilities-cell-header">Manager</div>
+          <div class="facilities-cell facilities-cell-header">Director</div>
+        </div>
+        <div class="facilities-data">
+        <!-- Facility Listing Data imported from script.js -->
+        </div>
+      </div>
+      <div class="facilities-exit border-style"><i class="fa fa-times" aria-hidden="true"></i></div>
+    </section>
+    <!-- Contacts Pop-up / Display: None by default -->
+    <section id="contacts">
+      <div id="contacts-container" class="border-style">
+        <div class="contacts-row">
+          <div class="contacts-cell contacts-cell-header">Contact</div>
+          <div class="contacts-cell contacts-cell-header">Phone #</div>
+        </div>
+        <div class="contacts-data">
+        <!-- Facility Listing Data imported from script.js -->
+        </div>
+      </div>
+      <div class="contacts-exit border-style"><i class="fa fa-times" aria-hidden="true"></i></div>
+    </section>
+  </div>
+</body>
+</html>
