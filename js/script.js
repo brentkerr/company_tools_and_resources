@@ -1,7 +1,3 @@
-  //////////////////////////////////////////
- //         VARIABLES AND ARRAYS         //
-//////////////////////////////////////////
-
 // Facility Listing variables/array
 var facRow = '<div class="facilities-row">';
 var facCell = '<div class="facilities-cell">';
@@ -31,6 +27,7 @@ var facListingData = [
 [random7DigitNumber(), 'Name 22', 'Location 22', 'Manager 22', 'Director 22'],
 [random7DigitNumber(), 'Name 23', 'Location 23', 'Manager 23', 'Director 23']
 ];
+
 // Contacts variables/array
 var contactRow = '<div class="contacts-row">'; 
 var contactCell = '<div class="contacts-cell">';
@@ -52,9 +49,10 @@ var contactData = [
 ['Contact 14', randomPhoneNumber()],
 ['Contact 15', randomPhoneNumber()]
 ];
+
 // Results variables
 var resultsURL = '<a href="'; 
-var resultsTitle = '" target="_blank"><div class="border-style button-results">'
+var resultsTitle = '"><div class="border-style button-results">'
 var resultsEnd = '</div></a>';
 // Quick Note variable
 var quicknoteFont = 14; 
@@ -62,12 +60,6 @@ var quicknoteFont = 14;
 var fadeQuick = 200; 
 // Fade speed Slow
 var fadeSlow = 400; 
-
-
-
-  //////////////////////////////////////////
- //              FUNCTIONS               //
-//////////////////////////////////////////
 
 // Hide Buttons and Show Results
 function showResults() {
@@ -116,12 +108,6 @@ function theme8() {
 	$('head').append('<link rel="stylesheet" href="css/style.css">');
 }
 
-
-
-  //////////////////////////////////////////
- //               LISTENER               //
-//////////////////////////////////////////
-
 // Listener
 $(document).ready(function() {
 
@@ -153,63 +139,63 @@ $(document).ready(function() {
 
 // Update results <div> HTML, show results <div> and hide all buttons
 	$('.button-a').click(function () {
-		$('.results-content').html(resultsURL + 'http://google.com' + resultsTitle + 'App A 01' + resultsEnd + resultsURL + 'http://google.com' + resultsTitle + 'App A 02' + resultsEnd + resultsURL + 'http://google.com' + resultsTitle + 'App A 03' + resultsEnd);
+		$('.results-content').html(resultsURL + '#' + resultsTitle + 'App A 01' + resultsEnd + resultsURL + '#' + resultsTitle + 'App A 02' + resultsEnd + resultsURL + '#' + resultsTitle + 'App A 03' + resultsEnd);
 		showResults();
 	});
 	$('.button-b').click(function () {
-		$('.results-content').html(resultsURL + 'http://google.com' + resultsTitle + 'App B 01' + resultsEnd + resultsURL + 'http://google.com' + resultsTitle + 'App B 02' + resultsEnd);
+		$('.results-content').html(resultsURL + '#' + resultsTitle + 'App B 01' + resultsEnd + resultsURL + '#' + resultsTitle + 'App B 02' + resultsEnd);
 		showResults();
 	});
 	$('.button-c').click(function () {
-		$('.results-content').html(resultsURL + 'http://google.com' + resultsTitle + 'App C 01' + resultsEnd + resultsURL + 'http://google.com' + resultsTitle + 'App C 02' + resultsEnd + resultsURL + 'http://google.com' + resultsTitle + 'App C 03' + resultsEnd);
+		$('.results-content').html(resultsURL + '#' + resultsTitle + 'App C 01' + resultsEnd + resultsURL + '#' + resultsTitle + 'App C 02' + resultsEnd + resultsURL + '#' + resultsTitle + 'App C 03' + resultsEnd);
 		showResults();
 	});
 	$('.button-f').click(function () {
-		$('.results-content').html(resultsURL + 'http://google.com' + resultsTitle + 'App F 01' + resultsEnd);
+		$('.results-content').html(resultsURL + '#' + resultsTitle + 'App F 01' + resultsEnd);
 		showResults();
 	});
 	$('.button-g').click(function () {
-		$('.results-content').html(resultsURL + 'http://google.com' + resultsTitle + 'App G 01' + resultsEnd + resultsURL + 'http://google.com' + resultsTitle + 'App G 02' + resultsEnd);
+		$('.results-content').html(resultsURL + '#' + resultsTitle + 'App G 01' + resultsEnd + resultsURL + '#' + resultsTitle + 'App G 02' + resultsEnd);
 		showResults();
 	});
 	$('.button-h').click(function () {
-		$('.results-content').html(resultsURL + 'http://google.com' + resultsTitle + 'App H 01' + resultsEnd + resultsURL + 'http://google.com' + resultsTitle + 'App H 02' + resultsEnd);
+		$('.results-content').html(resultsURL + '#' + resultsTitle + 'App H 01' + resultsEnd + resultsURL + '#' + resultsTitle + 'App H 02' + resultsEnd);
 		showResults();
 	});
 	$('.button-i').click(function () {
-		$('.results-content').html(resultsURL + 'http://google.com' + resultsTitle + 'App I 01' + resultsEnd + resultsURL + 'http://google.com' + resultsTitle + 'App I 02' + resultsEnd + resultsURL + 'http://google.com' + resultsTitle + 'App I 03' + resultsEnd);
+		$('.results-content').html(resultsURL + '#' + resultsTitle + 'App I 01' + resultsEnd + resultsURL + '#' + resultsTitle + 'App I 02' + resultsEnd + resultsURL + '#' + resultsTitle + 'App I 03' + resultsEnd);
 		showResults();
 	});
 	$('.button-k').click(function () {
-		$('.results-content').html(resultsURL + 'http://google.com' + resultsTitle + 'App K 01' + resultsEnd);
+		$('.results-content').html(resultsURL + '#' + resultsTitle + 'App K 01' + resultsEnd);
 		showResults();
 	});
 	$('.button-l').click(function () {
-		$('.results-content').html(resultsURL + 'http://google.com' + resultsTitle + 'App L 01' + resultsEnd + resultsURL + 'http://google.com' + resultsTitle + 'App L 02' + resultsEnd + resultsURL + 'http://google.com' + resultsTitle + 'App L03' + resultsEnd);
+		$('.results-content').html(resultsURL + '#' + resultsTitle + 'App L 01' + resultsEnd + resultsURL + '#' + resultsTitle + 'App L 02' + resultsEnd + resultsURL + '#' + resultsTitle + 'App L03' + resultsEnd);
 		showResults();
 	});
 	$('.button-m').click(function () {
-		$('.results-content').html(resultsURL + 'http://google.com' + resultsTitle + 'App M 01' + resultsEnd + resultsURL + 'http://google.com' + resultsTitle + 'App M 02' + resultsEnd);
+		$('.results-content').html(resultsURL + '#' + resultsTitle + 'App M 01' + resultsEnd + resultsURL + '#' + resultsTitle + 'App M 02' + resultsEnd);
 		showResults();
 	});
 	$('.button-n').click(function () {
-		$('.results-content').html(resultsURL + 'http://google.com' + resultsTitle + 'App N 01' + resultsEnd + resultsURL + 'http://google.com' + resultsTitle + 'App N 02' + resultsEnd);
+		$('.results-content').html(resultsURL + '#' + resultsTitle + 'App N 01' + resultsEnd + resultsURL + '#' + resultsTitle + 'App N 02' + resultsEnd);
 		showResults();
 	});
 	$('.button-p').click(function () {
-		$('.results-content').html(resultsURL + 'http://google.com' + resultsTitle + 'App P 01' + resultsEnd + resultsURL + 'http://google.com' + resultsTitle + 'App P 02' + resultsEnd + resultsURL + 'http://google.com' + resultsTitle + 'App P 03' + resultsEnd);
+		$('.results-content').html(resultsURL + '#' + resultsTitle + 'App P 01' + resultsEnd + resultsURL + '#' + resultsTitle + 'App P 02' + resultsEnd + resultsURL + '#' + resultsTitle + 'App P 03' + resultsEnd);
 		showResults();
 	});
 	$('.button-r').click(function () {
-		$('.results-content').html(resultsURL + 'http://google.com' + resultsTitle + 'App R 01' + resultsEnd);
+		$('.results-content').html(resultsURL + '#' + resultsTitle + 'App R 01' + resultsEnd);
 		showResults();
 	});
 	$('.button-s').click(function () {
-		$('.results-content').html(resultsURL + 'http://google.com' + resultsTitle + 'App S 01' + resultsEnd + resultsURL + 'http://google.com' + resultsTitle + 'App S 02' + resultsEnd + resultsURL + 'http://google.com' + resultsTitle + 'App S 03' + resultsEnd);
+		$('.results-content').html(resultsURL + '#' + resultsTitle + 'App S 01' + resultsEnd + resultsURL + '#' + resultsTitle + 'App S 02' + resultsEnd + resultsURL + '#' + resultsTitle + 'App S 03' + resultsEnd);
 		showResults();
 	});
 	$('.button-w').click(function () {
-		$('.results-content').html(resultsURL + 'http://google.com' + resultsTitle + 'App W 01' + resultsEnd);
+		$('.results-content').html(resultsURL + '#' + resultsTitle + 'App W 01' + resultsEnd);
 		showResults();
 	});
 
